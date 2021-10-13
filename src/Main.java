@@ -8,11 +8,5 @@ import java.util.stream.IntStream;
 public class Main {
 	public static void main(String[] args) {
 		int[] intArray = {3, 6, 9, 5, 2, 6, 8, 9, 11, 15, 1};
-		IntStream intStream = Arrays.stream(intArray);
-		int[] intArray1 = intStream.distinct()
-				.sorted()
-				.map(i -> i * 2)
-				.toArray();
-		System.out.println(Arrays.toString(intArray1));
 	}
 }
